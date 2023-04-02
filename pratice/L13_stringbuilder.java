@@ -18,6 +18,24 @@ public class L13_stringbuilder {
         sb.insert(2, 'n');
         System.out.println(sb);
 
+        // delete method
+        sb.delete(2, 3);
+        System.out.println(sb);
+
+        StringBuilder sb2=new StringBuilder("h");
+
+        // append method
+        sb2.append('e');
+        sb2.append('l');
+        sb2.append('l');
+        sb2.append('o');
+        sb2.append('\t');
+        sb2.append("yep");
+        System.out.println(sb2);
+        System.out.println(sb.length());
+        System.out.println(sb2.length());
+
+
 
 
 
