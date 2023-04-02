@@ -32,6 +32,8 @@ public class L13_stringbuilder {
         sb2.append('\t');
         sb2.append("yep");
         System.out.println(sb2);
+        
+        // length() method
         System.out.println(sb.length());
         System.out.println(sb2.length());
 
