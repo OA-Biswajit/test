@@ -38,6 +38,25 @@ public class L13_stringbuilder {
         System.out.println(sb2.length());
 
 
+// REVERSE A STRING
+        StringBuilder sb3 = new StringBuilder("HelloWorld");
+    
+        for(int i=0; i<sb3.length()/2; i++) {
+          int front = i;
+          int back = sb3.length() - i - 1;
+   
+   
+          char frontChar = sb3.charAt(front);
+          char backChar = sb3.charAt(back);
+   
+   
+          sb3.setCharAt(front, backChar);
+          sb3.setCharAt(back, frontChar);
+        }
+   
+   
+        System.out.println(sb3);
+   
 
 
 
