@@ -1,0 +1,41 @@
+
+class Solution
+{
+    public static boolean bsearch(int arr[],int n,int t){
+        int l = 0, h = n - 1;
+    while (l <= h) {
+        int mid = (l + h) / 2;
+        if (arr[mid] == t) {
+            return true;
+        }
+        else if (arr[mid] >t) {
+            h = mid - 1;
+        }
+        else {
+            l = mid + 1;
+        }
+    }
+    return false;
+ }
+    ArrayList<Integer> commonElements(int A[], int B[], int C[], int n1, int n2, int n3) 
+    { ArrayList<Integer> l1=new ArrayList<Integer>();
+          // Iterate on first array
+        for (int j = 0; j < n1; j++)
+        {
+           if (j != 0 && A[j] == A[j - 1]) {
+                continue;
+            }
+            // check if the element is present in 2nd and 3rd
+            // array.
+            if (bsearch(B,n2, A[j]) && bsearch(C, n3, A[j])) {
+                  if (l1.isEmpty() || l1.get(l1.size()-1) != A[j])
+                l1.add(A[j]);
+                 
+            }
+        }
+        
+    return l1;
+        
+    }
+    
+}

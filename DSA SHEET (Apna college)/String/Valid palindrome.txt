@@ -1,0 +1,22 @@
+class Solution {
+    public boolean isPalindrome(String s) {
+              // Reverse the string str
+              s=s.toLowerCase();
+        StringBuilder s2= new StringBuilder(); 
+        
+        for (int i=0;i<s.length();i++){
+        if(Character.isDigit(s.charAt(i)) || Character.isLetter(s.charAt(i)))
+         s2.append(s.charAt(i));
+        }
+       int i1 = 0;
+    int i2 = s2.length() - 1;
+    while (i2 > i1) {
+        if (s2.charAt(i1) != s2.charAt(i2)) {
+            return false;
+        }
+        ++i1;
+        --i2;
+    }
+    return true;
+    }
+}

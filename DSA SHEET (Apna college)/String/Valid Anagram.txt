@@ -1,0 +1,21 @@
+class Solution {
+    public boolean isAnagram(String s, String t) {
+     int sum1=0;
+     int sum2=0;
+     if(s.length()!=t.length())
+     return false;
+     s=s.toLowerCase();
+     t=t.toLowerCase();
+     char arr1 []=s.toCharArray();
+     char arr2[]=t.toCharArray();
+     Arrays.sort(arr1);
+     Arrays.sort(arr2);
+     boolean result =Arrays.equals(arr2,arr1);
+     if(result == true){
+         return true;
+     }
+     else
+     return false;
+    }
+    
+}
