@@ -6,6 +6,7 @@ public class zigzag {
                 { 1, 4, 3, 4 }
 
         };
+        System.err.print("Error:: code Incomplete");
 
         System.out.println(array[0][0]);
 
