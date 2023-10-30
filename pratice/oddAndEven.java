@@ -1,3 +1,4 @@
+// import java.util.*;
 public class oddAndEven {
     public static void main(String[] args) {
         int array[][] = { { 1, 3, 4, 11 },
@@ -24,10 +25,12 @@ for (int i = 0; i < 4; i++) {
     NewArray[i][1] = even;
 
 }
+// System.out.println(Arrays.deepToString(NewArray));
 
 for (int i = 0; i < 4; i++) {
     for (int j = 0; j < 2; j++) {
-        System.out.print(NewArray[i][j]+" ");
+        System.out.print(NewArray[i][j] + " ");
+        
     }
     System.out.println();
 }
